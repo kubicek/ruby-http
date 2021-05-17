@@ -1,3 +1,6 @@
 source 'https://rubygems.org'
 
 gem "sinatra"
+
+instance_eval File.read('function/Gemfile') if File.exists?('function/Gemfile')
+
